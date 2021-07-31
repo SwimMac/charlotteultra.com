@@ -11,14 +11,14 @@ logo_url: https://charlotteultra.com/static/swimmac-logo.svg
 collections:
   - name: "pages"
     label: "Page Content"
-    folder: "src/pagecontent"
+    folder: "src/pages"
     create: true
     slug: "{{slug}}"
     fields:
       - label: "Layout"
         name: "layout"
         widget: "hidden"
-        default: "pagecontent.njk"
+        default: "pages.njk"
 
       - label: "permalink"
         name: "permalink"

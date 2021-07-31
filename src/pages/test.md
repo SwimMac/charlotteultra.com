@@ -1,5 +1,5 @@
 ---
-layout : pagecontent.njk
+layout : pages.njk
 pageName : test
 ---
 
