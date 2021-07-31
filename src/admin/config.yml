@@ -25,8 +25,8 @@ collections:
         widget: "hidden"
         default: "false"
 
-      - label: "Page Name"
-        name: "pageName"
+      - label: "Title"
+        name: "title"
         widget: "string"
 
       - label: "Post Body"
