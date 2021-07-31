@@ -7,3 +7,24 @@ public_folder: "/src/static/uploads"
 site_url: https://www.charlotteultra.com
 display_url: https://charlotteultra.com/
 logo_url: https://charlotteultra.com/static/swimmac-logo.svg
+
+
+collections:
+  - name: "pages"
+    label: "Page Content"
+    folder: "src/page-content"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "page-content.njk"
+
+      - label: "Page Name"
+        name: "page-name"
+        widget: "string"
+
+      - label: "Post Body"
+        name: "body"
+        widget: "markdown"
