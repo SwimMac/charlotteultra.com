@@ -22,8 +22,8 @@ collections:
 
       - label: "permalink"
         name: "permalink"
-        widget: "hidden"
-        default: 'false'
+        widget: "boolean"
+        default: false
 
       - label: "Title"
         name: "title"
