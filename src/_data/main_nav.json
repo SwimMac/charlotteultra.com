@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Ultra Meet Home",
+    "url": "/"
+  },
+  {
+    "name": "Meet Details",
+    "url": "/meet-details/"
+  },
+  {
+    "name": "Event Schedule",
+    "url": "/events/"
+  },
+  {
+    "name": "Accommodations",
+    "url": "/meet-accommodations/"
+  },
+  {
+    "name": "Meet Results",
+    "url": "/ultra-meet-results/"
+  },
+  {
+    "name": "Photos",
+    "url": "https://www.danphelpsphoto.com/Swimming/Charlotte-Ultra",
+    "targetBlank": true
+  }
+]

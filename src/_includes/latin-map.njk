@@ -1,0 +1,43 @@
+<div id="map-south" style="height: 600px; width: 100%;"></div>
+
+<script async defer='defer' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDRlGlxv8MwYW4cJ0_BvVvDDYpB0-XEhCQ&amp;callback=initMap'></script>
+<script>
+ 	function initMap() {
+		function addMapMarker(location, map) {
+			var contentString = '<h3>' + location[0] + '</h3><p>' + location[1] + '</p>';
+			var infowindow = new google.maps.InfoWindow({content: contentString});
+			var marker = new google.maps.Marker({
+					position: new google.maps.LatLng(location[2], location[3]),
+					title: location[0],
+					map: map
+			});
+			// Each map marker click function
+			google.maps.event.addListener(marker, 'click', (function (marker, location) {
+				return function () {
+					infowindow.open(map, marker);
+				}
+			})(marker, location));
+		}
+		// -------------- Recommendations Map ----------------//
+		var map = new google.maps.Map(document.getElementById('map-south'), {
+				zoom: 10,
+				center: new google.maps.LatLng(35.2092443, -80.8604379),
+				mapTypeId: 'roadmap',
+				disableDefaultUI: true
+		});
+		var locations = [
+			[
+				'South Region Pool & Office (Charlotte Latin)',
+				'9850 Providence Rd, Charlotte, NC 28277 (704) 846-5335',
+				35.075575,
+				-80.773947,
+				5
+			]
+		];
+		// Create markers.
+		for (var index = 0; index < locations.length; index++) {
+			var element = locations[index];
+			addMapMarker(element, map);
+		}
+	}
+</script>

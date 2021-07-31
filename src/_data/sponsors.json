@@ -1,0 +1,49 @@
+[
+  {
+    "level": "gold",
+    "sponsors": [
+      {
+        "name": "TYR Sports",
+        "image": "tyr-sports.png"
+      },
+      {
+        "name": "Novant Health",
+        "image": "novant-health.jpg"
+      },
+      {
+        "name": "Charlottes Got a Lot",
+        "image": "crva.jpg"
+      },
+      {
+        "name": "Harris Teeter",
+        "image": "harris-teeter.jpg"
+      }
+    ]
+  },
+  {
+    "level":"silver",
+    "sponsors": [
+      {
+        "name": "Charlotte Latin",
+        "image": "charlotte-latin.png"
+      },
+      {
+        "name": "Paddock Evacuator",
+        "image": "paddock.jpg"
+      },
+      {
+        "name": "Shiel Sexton",
+        "image": "shiel-sexton.jpg"
+      }
+    ]
+  },
+  {
+    "level":"bronze",
+    "sponsors": [
+      {
+        "name": "Nothing But Noodles",
+        "image": "nothing-but-noodles.png"
+      }
+    ]
+  }
+]

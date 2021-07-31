@@ -1,0 +1,42 @@
+/* purgecss start ignore */
+@layer base {
+	.dropdown-menu {
+		@apply absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-auto;
+		z-index: 999;
+	}
+
+	.dropdown-menu__wrapper {
+		@apply px-2 py-2 bg-white rounded-md shadow;
+	}
+
+	.dropdown-menu__toggler {
+		@apply flex
+		flex-row
+		items-center
+		px-4
+		py-2
+		bg-transparent
+		hover:text-white
+		focus:text-white
+		hover:bg-primary
+		focus:bg-primary
+		focus:outline-none;
+	}
+
+	.dropdown-menu__toggler--aux {
+		@apply w-full
+		mt-2
+		md:mt-0
+		text-sm
+		font-semibold
+		text-white;
+	}
+	.dropdown-menu__toggler-arrow {
+		@apply inline w-4 h-4 ml-1 mt-1 transition-transform duration-200 transform;
+	}
+
+	.dropdown-menu__link {
+		@apply block px-4 py-2 whitespace-nowrap no-underline hover:bg-secondary hover:text-white;
+	}
+}
+/* purgecss end ignore */

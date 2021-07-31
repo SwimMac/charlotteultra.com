@@ -1,0 +1,45 @@
+---json
+{
+  "permalink": "feed.xml",
+  "eleventyExcludeFromCollections": true,
+  "metadata": {
+    "title": "SwimMAC Carolina News",
+    "url": "https://www.swimmaccarolina.org",
+    "feedUrl": "https://www.swimmaccarolina.org/feed.xml",
+    "author": {
+      "name": "SwimMAC Carolina",
+      "email": "harvey@flaremark.com"
+    }
+  }
+}
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ metadata.title }}</title>
+  <link href="{{ metadata.feedUrl }}" rel="self"/>
+  <link href="{{ metadata.url }}"/>
+  <updated>{{ collections.news | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <id>{{ metadata.url }}</id>
+  <author>
+    <name>{{ metadata.author.name }}</name>
+  </author>
+  {%- for post in collections.news %}
+
+    {% set featuredImage %}
+    <p><img src="{{ post.image }}" alt=""/></p>
+    {% endset %}
+
+
+    {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+    <entry>
+      <title>{{ post.data.title }}</title>
+      <link href="{{ absolutePostUrl }}"/>
+      <updated>{{ post.date | dateToRfc3339 }}</updated>
+      <id>{{ absolutePostUrl }}</id>
+      <content type="html">
+        {{ featuredImage | htmlToAbsoluteUrls(absolutePostUrl) }}
+        {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}
+      </content>
+    </entry>
+  {%- endfor %}
+</feed>

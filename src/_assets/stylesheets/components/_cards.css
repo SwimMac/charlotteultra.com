@@ -1,0 +1,18 @@
+/* purgecss start ignore */
+@layer base {
+
+	.card {
+		@apply block bg-white rounded shadow-md text-gray-900;
+	}
+
+	a.card:hover {
+    box-shadow: 0 5px 14px 0 rgb(0 0 0 / 16%), 0 5px 12px 7px rgb(0 0 0 / 12%);
+    transform: translateY(-9px);
+    transition: all .3s;
+	}
+	a.card {
+		transition: all .3s;
+	}
+
+}
+/* purgecss end ignore */

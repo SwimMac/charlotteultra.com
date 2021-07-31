@@ -1,0 +1,26 @@
+/* purgecss start ignore */
+@layer base {
+
+  .hero {
+		@apply flex relative items-center justify-center overflow-hidden text-white flex-col;
+    min-height: 10rem;
+	}
+
+	.hero video {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+	}
+
+  @media (min-width: 768px) {
+    .hero {
+      min-height: 31.25rem;
+    }
+  }
+
+}
+/* purgecss end ignore */

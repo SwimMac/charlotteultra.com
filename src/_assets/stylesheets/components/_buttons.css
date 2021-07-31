@@ -1,0 +1,41 @@
+/* purgecss start ignore */
+@layer base {
+
+	.button {
+		@apply inline-block
+		no-underline
+		bg-primary
+		text-white
+		text-lg
+		rounded
+		py-3
+		px-6
+		hover:bg-primary-dark
+		hover:text-white
+		hover:shadow-lg
+		transition
+		duration-300;
+	}
+
+	.button--small {
+		@apply text-base py-2 px-4;
+	}
+
+	.button.ghost {
+		@apply bg-transparent border-2 border-primary text-primary;
+	}
+
+	.button.secondary {
+		@apply bg-secondary text-white;
+	}
+
+	.button.secondary.ghost {
+		@apply bg-transparent border-2 border-secondary text-secondary;
+	}
+
+	.button.secondary.ghost:hover {
+		@apply bg-secondary text-white;
+	}
+
+}
+/* purgecss end ignore */

@@ -1,0 +1,9 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: "/src/static/uploads"
+public_folder: "/src/static/uploads"
+site_url: https://www.charlotteultra.com
+display_url: https://charlotteultra.com/
+logo_url: https://charlotteultra.com/static/swimmac-logo.svg

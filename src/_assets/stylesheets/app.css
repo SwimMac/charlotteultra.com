@@ -1,0 +1,121 @@
+@import 'utils/_tailwind.css';
+@import 'utils/_typography.css';
+@import 'utils/_accessibility.css';
+@import 'utils/_responsive-embed.css';
+@import 'utils/_forms.css';
+@import 'components/_navigation.css';
+@import 'components/_buttons.css';
+@import 'components/_cards.css';
+@import 'components/_hero.css';
+
+/* purgecss start ignore */
+@layer base {
+
+	[x-cloak] { display: none; }
+
+	table tr {
+		@apply border;
+	}
+
+	table td {
+		@apply p-2;
+	}
+
+	th, tbody tr:nth-child(even) {
+    @apply bg-gray-100;
+	}
+
+	.responsive-table {
+		width: 100%;
+		border-spacing: 0;
+		border-collapse: collapse;
+	}
+
+	.responsive-table thead {
+		position: absolute;
+		clip: rect(1px, 1px, 1px, 1px);
+		padding: 0;
+		border: 0;
+		height: 1px;
+		width: 1px;
+		overflow: hidden;
+	}
+
+	.responsive-table thead :first-child {
+		text-align: left;
+	}
+
+	.responsive-table thead th {
+		text-align: center;
+	}
+
+	.responsive-table tbody, .responsive-table tr, .responsive-table th, .responsive-table td {
+		display: block;
+		padding: 0;
+		text-align: left;
+		white-space: normal;
+	}
+
+	.responsive-table thead tr th, .responsive-table tbody tr td, .responsive-table tbody tr th {
+		padding: .3em .5em;
+		vertical-align: middle;
+	}
+
+	.responsive-table tbody td {
+		text-align: right;
+	}
+
+	@media (min-width: 450px){
+		.responsive-table thead {
+			position: relative;
+			clip: auto;
+			height: auto;
+			width: auto;
+			overflow: auto;
+		}
+
+		.responsive-table th, .responsive-table td {
+			display: table-cell;
+		}
+
+		.responsive-table tr {
+			display: table-row;
+		}
+
+		.responsive-table tbody {
+			display: table-row-group;
+		}
+
+		.responsive-table tbody :first-child {
+			text-align: left;
+		}
+
+		.responsive-table tbody tr {
+				display: table-row;
+				border: none;
+		}
+
+		.responsive-table tbody :first-child {
+			text-align: left;
+		}
+
+		.responsive-table tbody th[scope="row"] {
+			background-color: transparent;
+			color: rgba(94,93,82,1);
+			font-weight: normal;
+		}
+
+		.responsive-table tbody td[data-title]:before {
+			font-size: .9em;
+		}
+
+		.responsive-table tbody td[data-title]:before {
+			content: attr(data-title);
+			float: left;
+			font-size: .8em;
+			color: rgba(94, 93, 82, .75);
+		}
+	}
+}
+
+/* purgecss end ignore */
