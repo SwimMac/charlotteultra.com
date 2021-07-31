@@ -22,7 +22,7 @@ collections:
 
       - label: "permalink"
         name: "permalink"
-        widget: "boolean"
+        widget: "hidden"
         default: "false"
 
       - label: "Title"
