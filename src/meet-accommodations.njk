@@ -5,18 +5,15 @@ name: meet-accommodations
 ---
 {% set pages = collections.pages %}
 
-<main id="main" class="bg-gray-100 overflow-hidden">
-    {% banner title, {image: 'details-hero.jpg' } %}
+{% banner title, {image: 'accommodations.jpg' } %}
 
-    <div class="container my-6">
-        {% include 'covid.njk' %}
+<div class="container my-6">
+    {% include 'covid.njk' %}
 
-        {% for content in pages %}
-        {% if content.data.title === "Accommodations" %}
+    {% for content in pages %}
+    {% if content.data.title === "Accommodations" %}
 
-        {{ content.templateContent | safe }}
-        {% endif %}
-        {% endfor %}
-    </div>
-
-</main>
+    {{ content.templateContent | safe }}
+    {% endif %}
+    {% endfor %}
+</div>
