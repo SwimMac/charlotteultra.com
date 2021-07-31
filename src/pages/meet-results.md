@@ -1,6 +1,6 @@
 ---
 layout: pages.njk
-permalink: false
+permalink: "false"
 title: Meet Results
 ---
 Test meet results content
