@@ -1,6 +1,6 @@
 ---
 layout: pages.njk
 permalink: "false"
-title: Meet Results
+title: Accommodations
 ---
-Test meet results content
+Test meet accommodations content. 🏊‍♂️
