@@ -81,9 +81,9 @@ module.exports = function (eleventyConfig) {
     });
 
     // Collections
-    Object.keys(collections).forEach((collectionName) => {
-        eleventyConfig.addCollection(collectionName, collections[collectionName])
-    });
+    // Object.keys(collections).forEach((collectionName) => {
+    //     eleventyConfig.addCollection(collectionName, collections[collectionName])
+    // });
 
     // This allows Eleventy to watch for file changes during local development.
     eleventyConfig.setUseGitIgnore(false);
