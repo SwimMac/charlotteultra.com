@@ -34,9 +34,6 @@
 <!-- Identify the software used to build the document, Eleventy ftw! -->
 <meta name="generator" content="eleventy">
 
-<!-- Disable automatic detection and formatting of possible phone numbers -->
-<meta name="format-detection" content="telephone=no">
-
 <!-- Helps prevent duplicate content issues -->
 <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
@@ -73,3 +70,13 @@
 <meta name="twitter:dnt" content="on">
 <script src="/js/alpine.js?v={% version %}" defer></script>
 <script src="https://kit.fontawesome.com/822f00bd97.js" crossorigin="anonymous"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BC657WJQGW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BC657WJQGW');
+</script>
