@@ -21,8 +21,13 @@ collections:
         widget: "hidden"
         default: "page-content.njk"
 
+      - label: "permalink"
+        name: "permalink"
+        widget: "hidden"
+        default: "false"
+
       - label: "Page Name"
-        name: "page-name"
+        name: "pageName"
         widget: "string"
 
       - label: "Post Body"
