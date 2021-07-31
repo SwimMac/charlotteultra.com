@@ -1,6 +1,7 @@
 ---
-layout : pages.njk
-pageName : test
+layout: pages.njk
+pageName: test
+title: Test Page
 ---
 
 Test content
