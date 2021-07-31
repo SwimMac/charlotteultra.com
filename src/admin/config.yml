@@ -5,9 +5,8 @@ backend:
 media_folder: "/src/static/uploads"
 public_folder: "/src/static/uploads"
 site_url: https://www.charlotteultra.com
-display_url: https://charlotteultra.com/
+display_url: https://charlotteultra.com
 logo_url: https://charlotteultra.com/static/swimmac-logo.svg
-
 
 collections:
   - name: "pages"
@@ -19,7 +18,7 @@ collections:
       - label: "Layout"
         name: "layout"
         widget: "hidden"
-        default: "page-content.njk"
+        default: "pageContent.njk"
 
       - label: "permalink"
         name: "permalink"
