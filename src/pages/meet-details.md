@@ -1,6 +1,5 @@
 ---
 layout: pages.njk
-permalink: "false"
 title: Meet Details
 ---
 <!--StartFragment-->

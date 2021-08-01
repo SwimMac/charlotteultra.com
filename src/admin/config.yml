@@ -20,11 +20,6 @@ collections:
         widget: "hidden"
         default: "pages.njk"
 
-      - label: "permalink"
-        name: "permalink"
-        widget: "hidden"
-        default: "false"
-
       - label: "Title"
         name: "title"
         widget: "string"
