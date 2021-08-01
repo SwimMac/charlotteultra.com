@@ -147,6 +147,6 @@ As a team entered in this meet, upon entry you are verifying that all of the swi
 
 All participants agree to be filmed and photographed by the host club approved photographer(s) and videographers and to allow the right to use names and pictures before, during, or after the meet such as in public psych sheets, heat sheets, and results or featured on the host club or NCS website or social media or in public broadcast of the event via television or webcast. Parents and guardians of minor swimmers who do not wish their swimmers to participate in interviews or have individual pictures featured on any media should inform their team’s head coach and the Meet Director prior to the meet.
 
-[Event Information](https://www.charlotteultra.com/events)
+<a href="/events" class="button">Event Information</a>
 
 <!--EndFragment-->
