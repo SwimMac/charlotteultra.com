@@ -11,10 +11,12 @@ name: meet-details
 <div class="container my-6">
     {% include 'covid.njk' %}
 
-    {% for content in pages %}
-    {% if content.data.title === "Meet Details" %}
+    <div class="card p-4">
+        {% for content in pages %}
+        {% if content.data.title === "Meet Details" %}
 
-    {{ content.templateContent | safe }}
-    {% endif %}
-    {% endfor %}
+        {{ content.templateContent | safe }}
+        {% endif %}
+        {% endfor %}
+    </div>
 </div>
